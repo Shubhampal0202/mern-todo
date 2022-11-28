@@ -1,4 +1,4 @@
-## Todos App
+## Mern Todo App
 
 An app to keep track of todo. We can create a new todo, delete a todo, update a todo and see list of todos.
 
@@ -38,7 +38,7 @@ Database: MongoDB
 }
 ```
 
-### Responce todo
+### Response todo
 todo:
 
 ```javascript
