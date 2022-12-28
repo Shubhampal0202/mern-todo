@@ -4,9 +4,9 @@ import { connection } from "./database/db.js"
 import { Todo } from './model/todo.js'
 const app = express();
 app.use(express.json())// when we send json data from frontend to backend
-app.use(cors());// cross origin resorce sharing when frontend and backend are running on diff. port then user cant not
-// send data from backend to frontend and vice versa. thats why we this middleware to remove the error
-connection()
+app.use(cors());// cross origin resorce sharing when frontend and backend are running on diff. port then user can not
+// send data from backend to frontend and vice versa. thats why we use this middleware to remove the error
+connection();
 const PORT = process.env.PORT || 8000
 // app.get("/", (req, res) => {
 //     console.log("this is get request")
@@ -68,6 +68,6 @@ app.delete("/todos/:_id", async (req, res) => {
     }
 })
 app.listen(PORT, () => {
-    console.log(`server is on port ${PORT}`);
+    console.log(`server is  running on port ${PORT}`);
 })
 
